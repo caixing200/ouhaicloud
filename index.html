@@ -669,7 +669,7 @@
         }
         .headerMenuBtn {
             float: left;
-            width: 25%;
+            width: 20%;
             height: 100%;
             line-height: 250%;
         }
@@ -1056,12 +1056,12 @@
                         </div>
                     </div>
                 </el-col>
-                <el-col :xs="14" :sm="14" :md="11" :lg="13" :xl="15" style="height: 100%;position: relative">
+                <el-col :xs="14" :sm="14" :md="9" :lg="11" :xl="14" style="height: 100%;position: relative">
                     <div class="headerTitle" :class="{headerTitleInPc:resetHeaderTitle}">
                         瓯海区工业云平台
                     </div>
                 </el-col>
-                <el-col :md="9" :lg="7" :xl="5" style="height: 100%" class="hidden-sm-and-down">
+                <el-col :md="11" :lg="9" :xl="6" style="height: 100%" class="hidden-sm-and-down">
                     <div class="headerMenu">
                         <div class="headerMenuBtn">
                             <span class="menuBtns"><a href="#page2" style="color: #ffffff;">云上企业</a></span>
@@ -1077,6 +1077,9 @@
                             </el-dropdown>
                         </div>
                         <div class="headerMenuBtn">
+                            <span class="menuBtns"><a href="http://myerp1.com:88" target="_blank" style="color: #ffffff;">瓯海眼镜云</a></span>
+                        </div>
+                        <div class="headerMenuBtn">
                             <el-dropdown trigger="click">
                                 <span class="menuBtns">智能锁平台<i class="el-icon-arrow-down el-icon--right"></i></span>
                                 <el-dropdown-menu slot="dropdown">
@@ -1090,6 +1093,7 @@
                                 <span class="menuBtns">云上服务<i class="el-icon-arrow-down el-icon--right"></i></span>
                                 <el-dropdown-menu slot="dropdown">
                                     <el-dropdown-item><a href="http://ouyd.yougoo.cn/" target="_blank" style="color: #606266">浙江移动</a></el-dropdown-item>
+                                    <el-dropdown-item><a href="http://cloud.10010zj.com.cn/index.html#page2" target="_blank" style="color: #606266">浙江联通</a></el-dropdown-item>
                                 </el-dropdown-menu>
                             </el-dropdown>
                         </div>
@@ -1114,7 +1118,7 @@
             <el-col :xs="8" :sm="8" :md="8" :lg="6" :xl="4" class="linkView">
                 <div class="linkViewStyle">
                     <div class="linkTextStyle">
-                        <a class="linkA" href="http://www.ouhaicloud.cn/login.jsp" target="_blank" style="color: #000">
+                        <a class="linkA" href="https://web.ouhaicloud.com" target="_blank" style="color: #000">
                             <i class="linkATxtBox">
                                 <span class="linkATxt">云上企业用户</span>
                             </i>
@@ -1125,9 +1129,9 @@
             <el-col :xs="8" :sm="8" :md="8" :lg="7" :xl="4" class="linkView">
                 <div class="linkViewStyle">
                     <div class="linkTextStyle">
-                        <a class="linkA" href="http://www.umade.com.cn/View/Demand/DemandList.aspx" target="_blank" style="color: #000">
+                        <a class="linkA" href="http://myerp1.com:88" target="_blank" style="color: #000">
                             <i class="linkATxtBox">
-                                <span class="linkATxt">协作需求入口</span>
+                                <span class="linkATxt">瓯海眼镜云</span>
                             </i>
                         </a>
                     </div>
@@ -1191,25 +1195,29 @@
                         <span slot="title"><a href="http://www.umade.com.cn/View/Shop/ShopMap.aspx"  target="_blank" style="color: #fff">工业地图</a></span>
                     </el-menu-item>
                 </el-submenu>
-                <el-submenu index="4">
+                <el-menu-item index="4">
+                    <span slot="title"><a href="http://myerp1.com:88" target="_blank" style="color: #ffffff;">瓯海眼镜云</a></span>
+                </el-menu-item>
+                <el-submenu index="5">
                     <template slot="title">
                         <span>智能锁平台</span>
                     </template>
-                    <el-menu-item index="4-1">
+                    <el-menu-item index="5-1">
                         <span slot="title">
                             <a href="http://47.104.177.219:8084/#/ouhai"  target="_blank" style="color: #fff">智能锁开放平台</a>
                         </span>
                     </el-menu-item>
-                    <el-menu-item index="4-2">
+                    <el-menu-item index="5-2">
                         <span slot="title"><a href="http://183.230.102.49:1280/admin/home/map"  target="_blank" style="color: #fff">智能锁公寓平台</a></span>
                     </el-menu-item>
                 </el-submenu>
-                <el-submenu index="5">
+                <el-submenu index="6">
                     <template slot="title">
                         <span>云上服务</span>
                     </template>
-                    <el-menu-item index="5-1">
+                    <el-menu-item index="6-1">
                         <span slot="title"><a href="http://ouyd.yougoo.cn/"  target="_blank" style="color: #fff">浙江移动</a></span>
+                        <span slot="title"><a href="http://cloud.10010zj.com.cn/index.html#page2"  target="_blank" style="color: #fff">浙江联通</a></span>
                     </el-menu-item>
                     <!--<el-menu-item index="4-2">-->
                         <!--<span slot="title">在线客服</span>-->
@@ -1232,7 +1240,7 @@
                 <el-col :lg="1" :xl="2" style="height: 100%;" class="hidden-md-and-down"></el-col>
                 <el-col :xs="24" :sm="24" :md="24" :lg="22" :xl="20"  style="height: 100%;" >
                     <el-col v-for="(item,index) in iconList" :xs="6" :sm="6" class="iconView" :style="{'background-image': 'url('+item+')'}">
-                        <a class="iconBlanks" href="http://www.ouhaicloud.cn/login.jsp"  target="_blank">
+                        <a class="iconBlanks" href="https://web.ouhaicloud.com"  target="_blank">
                             {{iconTextList[index]}}
                         </a>
                     </el-col>
